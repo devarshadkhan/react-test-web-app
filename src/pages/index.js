@@ -1,11 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import Slider from "react-slick";
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+  };
   return (
     <>
       <Head>
@@ -14,101 +24,268 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <div>
+        <div className={styles.main_wrp}>
+          <div className="container">
+            <div className="row salign-items-center">
+              <div className="col-12 col-md-7">
+                <div className={styles.left_side}>
+                  <div className={styles.bag1}>
+                    <h2>
+                      Private Limited (Pvt Ltd) Company{" "}
+                      <span>Registration Online In India</span>
+                    </h2>
+                    <p>
+                      No more delays or difficulties! Register your business
+                      with India’s #1 provider of company incorporation
+                      services. Get a 7 day{" "}
+                      <b
+                        className="fw-bold "
+                        style={{
+                          display: "inline-block",
+                          alignItems: "start",
+                          gap: "2px",
+                        }}
+                      >
+                        {/* <b className="fw-bold " style={{display:"inline-flex",alignItems:"center",gap:"2px"}}> */}
+                        <img
+                          src="https://assets.vakilsearch.com/live-images/star_tick.svg"
+                          alt=""
+                        />{" "}
+                        Guaranteed
+                      </b>{" "}
+                      document upload to the MCA or receive a full{" "}
+                      <span className="d-block">
+                        refund <a href="">T&C*</a>
+                      </span>{" "}
+                    </p>
+                  </div>
+
+                  <div className={styles.bag2}>
+                    <img
+                      src="https://assets.vakilsearch.com/live-images/youtube_play.svg"
+                      alt=""
+                    />
+                    <a href="">Click to watch 60 seconds video</a>
+                  </div>
+                  <div className={styles.bag3}>
+                    <p>
+                      <b className="fw-bold">50,000+</b> businesses incorporated
+                      since 2011
+                    </p>
+                  </div>
+
+                  <div className={styles.slide_slder}>
+                    <Slider {...settings}>
+                      <div>
+                        <div className={styles.slide_sec}>
+                          <img
+                            src="https://assets.vakilsearch.com/live-images/client-3.svg"
+                            alt=""
+                          />
+
+                          <div>
+                            <p>
+                              Mr. Hrishikesh Datar, the founder of Vakilsearch,
+                              encouraged and also provided me with a fast and
+                              cost-effective Pvt Ltd registration, and I highly
+                              recommend their services.
+                            </p>
+
+                            <h6>
+                              <b className="fw-bold">Founder</b> - Chef & Chief
+                              Baking officer of Four Seasons Pastry
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className={styles.slide_sec}>
+                          <img
+                            src="https://assets.vakilsearch.com/live-images/client-3.svg"
+                            alt=""
+                          />
+
+                          <div>
+                            <p>
+                              Mr. Hrishikesh Datar, the founder of Vakilsearch,
+                              encouraged and also provided me with a fast and
+                              cost-effective Pvt Ltd registration, and I highly
+                              recommend their services.
+                            </p>
+
+                            <h6>
+                              <b className="fw-bold">Founder</b> - Chef & Chief
+                              Baking officer of Four Seasons Pastry
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className={styles.slide_sec}>
+                          <img
+                            src="https://assets.vakilsearch.com/live-images/client-3.svg"
+                            alt=""
+                          />
+
+                          <div>
+                            <p>
+                              Mr. Hrishikesh Datar, the founder of Vakilsearch,
+                              encouraged and also provided me with a fast and
+                              cost-effective Pvt Ltd registration, and I highly
+                              recommend their services.
+                            </p>
+
+                            <h6>
+                              <b className="fw-bold">Founder</b> - Chef & Chief
+                              Baking officer of Four Seasons Pastry
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className={styles.slide_sec}>
+                          <img
+                            src="https://assets.vakilsearch.com/live-images/client-3.svg"
+                            alt=""
+                          />
+
+                          <div>
+                            <p>
+                              Mr. Hrishikesh Datar, the founder of Vakilsearch,
+                              encouraged and also provided me with a fast and
+                              cost-effective Pvt Ltd registration, and I highly
+                              recommend their services.
+                            </p>
+
+                            <h6>
+                              <b className="fw-bold">Founder</b> - Chef & Chief
+                              Baking officer of Four Seasons Pastry
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className={styles.slide_sec}>
+                          <img
+                            src="https://assets.vakilsearch.com/live-images/client-3.svg"
+                            alt=""
+                          />
+
+                          <div>
+                            <p>
+                              Mr. Hrishikesh Datar, the founder of Vakilsearch,
+                              encouraged and also provided me with a fast and
+                              cost-effective Pvt Ltd registration, and I highly
+                              recommend their services.
+                            </p>
+
+                            <h6>
+                              <b className="fw-bold">Founder</b> - Chef & Chief
+                              Baking officer of Four Seasons Pastry
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className={styles.slide_sec}>
+                          <img
+                            src="https://assets.vakilsearch.com/live-images/client-3.svg"
+                            alt=""
+                          />
+
+                          <div>
+                            <p>
+                              Mr. Hrishikesh Datar, the founder of Vakilsearch,
+                              encouraged and also provided me with a fast and
+                              cost-effective Pvt Ltd registration, and I highly
+                              recommend their services.
+                            </p>
+
+                            <h6>
+                              <b className="fw-bold">Founder</b> - Chef & Chief
+                              Baking officer of Four Seasons Pastry
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                    </Slider>
+                  </div>
+                </div>
+              </div>
+              <div className={"col-12 col-md-5" } id={styles.dsdede}>
+                <div className={styles.form_sec}>
+                <img src="https://assets.vakilsearch.com/live-images/diwalioffer.svg" className={styles.imgh} alt="" />
+                  <form action="">
+                    <h3>Register your company today</h3>
+                    <div class="form-floating mb-3 mt-4">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Mobile Number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">City</label>
+                    </div>
+
+                    <div className={styles.lart_ftr}>
+                     <p> Get easy updates through
+                      {" "}
+                      <img
+                        src="https://assets.vakilsearch.com/live-images/account-bookkeeping/logos_whatsapp.svg"
+                        alt=""
+                      />
+                      {" "}
+                      Whatsapp</p>
+                    </div>
+
+                    <button>Talk to registration expert</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div className={("row", styles.ftr_row)}>
+              <div className="col-12">
+                <div className={styles.ftr_para}>
+                  <p>
+                    Get Partner Benefits Worth Upto 4 lakhs by Incorporating
+                    Your Company With Us!
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
+      </div>
+      {/* <div className="wrp_f">
+        <div className="container">
+        <div className="row">
+            <div className="col-12">
+                  <div className={styles.ftr_para}>
+                    <p>Get Partner Benefits Worth Upto 4 lakhs by Incorporating Your Company With Us!</p>
+                  </div>
+              </div>
+            </div>
         </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      </div> */}
     </>
-  )
+  );
 }
